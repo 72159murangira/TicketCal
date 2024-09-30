@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Calculator</h1>
+        <form id="ticketForm">
+            <div class="ticket-group">
+                <label>Adults (Max: 4):</label>
+                <button type="button" class="btn" id="adultMinus">-</button>
+                <span id="adultCount">0</span>
+                <button type="button" class="btn" id="adultPlus">+</button>
+            </div>
+            <div class="ticket-group">
+                <label>Children (Max: 5):</label>
+                <button type="button" class="btn" id="childMinus">-</button>
+                <span id="childCount">0</span>
+                <button type="button" class="btn" id="childPlus">+</button>
+            </div>
+        </form>
+        <div id="priceDisplay" class="price-box">Total Price: €0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
